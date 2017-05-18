@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>vk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Next-team-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Next-team-SMM-Copy" transform="translate(-101.000000, -1218.000000)" stroke="#02295D" stroke-width="2">
+            <g id="Group" filter="url(#filter-1)" transform="translate(39.000000, 895.000000)">
+                <g id="social" transform="translate(32.000000, 334.000000)">
+                    <g id="vk" transform="translate(41.000000, 0.000000)">
+                        <rect id="Rectangle-8" x="0" y="0" width="30" height="30" rx="5"></rect>
+                        <g id="Group-20" transform="translate(8.000000, 9.000000)" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.50353519,0 L7.50353519,12 C7.50353519,12 3.85719366,10.4130631 2.03087128,7.78712604 C0.204548892,5.16118898 0,0.111072348 0,0.111072348" id="Path-8"></path>
+                            <path d="M13.9980654,0 C13.9980654,0 13.9462304,2.52034779 12.6061829,4.54336644 C11.2661353,6.56638509 8,7 8,7" id="Path-9"></path>
+                            <path d="M13.9980654,5.97682218 C13.9980654,5.97682218 13.9462304,8.49716997 12.6061829,10.5201886 C12.182076,11.1604466 11.5650451,11.641504 10.919686,12" id="Path-9-Copy" transform="translate(12.458876, 8.988411) scale(1, -1) translate(-12.458876, -8.988411) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

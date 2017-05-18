@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>insta</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Next-team-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Next-team-SMM-Copy" transform="translate(-60.000000, -1218.000000)" stroke-width="2" stroke="#02295D">
+            <g id="Group" filter="url(#filter-1)" transform="translate(39.000000, 895.000000)">
+                <g id="social" transform="translate(32.000000, 334.000000)">
+                    <g id="insta">
+                        <rect id="Rectangle-8" x="0" y="0" width="30" height="30" rx="5"></rect>
+                        <circle id="Oval-3" cx="15" cy="15" r="6"></circle>
+                        <circle id="Oval-3-Copy" transform="translate(24.000000, 6.000000) scale(-1, -1) translate(-24.000000, -6.000000) " cx="24" cy="6" r="2"></circle>
+                        <path d="M0,13 L9.25004114,13" id="Path-7"></path>
+                        <path d="M21,13 L30.2500411,13" id="Path-7-Copy"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
