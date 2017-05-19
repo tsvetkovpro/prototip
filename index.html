@@ -6,13 +6,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link id="favicon" rel="icon" href="img/favicon.png" type="image/x-icon" />
-
 	<link rel="stylesheet" type="text/css" href="js/fb/jquery.fancybox.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/_experts.css">
 		<link rel="stylesheet" type="text/css" href="css/_reviews.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/screen.css">
-
+	<link rel="stylesheet" type="text/css" href="css/calc.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="js/jquery.form.min.js"></script>
 	<script type="text/javascript" src="js/fb/jquery.fancybox.js"></script>
@@ -40,7 +40,7 @@
 						<form class="" action="http://smm.next-team.ru/mailer.php" method="post">
 							<input type="text" name="phone" placeholder="Введите ваш контактный телефон" value="">
 							<input type="hidden" name="info" value="main-block">
-                            <input type="hidden" name="target" value="hochu">
+							<input type="hidden" name="target" value="hochu">
 							<button class="but-with-arrow">
 								<span style="right: 44px;">Хочу</span>
 							</button>
@@ -49,13 +49,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg" style="z-index: 200;">
+		<!-- <div class="bg" style="z-index: 200;">
 			<div>
 				<div>Мария Зотова<br>
 					<span>руководитель отдела СММ</span>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="how-we-work simple">
@@ -108,6 +108,183 @@
 			</div>
 		</div>
 	</section>
+
+
+
+	<section class="how-we-work simple">
+		<div class="container">
+			<div class="row">
+				<div class="title col-12">
+					<h2>Как мы работаем</h2>
+					<div class="clearfix"></div>
+
+					<div class="col-md-10 col-md-offset-1">
+						<div class="widget-calc animate-box">
+							<div class="tab">
+								<a class="active" data-id="1" href="">Ежемесячный доход</a>
+								<a class="" data-id="2" href="">Сберегательный</a>
+							</div>
+							<div class="block">
+								<div class="item item-1" data-id="1">
+									<form accept-charset="UTF-8" action="/calc/add.php" class="new_saving row" id="new_saving_2" method="post">
+										<div style="display:none">
+											<input name="utf8" type="hidden" value="?">
+											<input name="type" type="hidden" value="ezhemesyachnyi">
+											<input name="authenticity_token" type="hidden" value="3IBlrjZFZVInV3wmo1ovO8wI/gHl64vb+JrmoEp1Vm8=">
+										</div>
+										<input id="saving_deposit_id_2" name="saving[deposit_id]" type="hidden" value="2">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="ante col-xs-12 col-sm-6 col-md-7">
+													<span>Я хочу внести: </span><input id="saving_sum_2" name="saving[sum]" type="text" value="1400000"> руб.
+												</div>
+												<div class="pensioner col-xs-12 col-sm-6 col-md-5">
+													<span>
+														<input id="saving_pensioner_2" name="saving[pensioner]" type="checkbox" value="1">
+														<label for="saving_pensioner_2">Я пенсионер</label>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="row">
+												<div class="slider col-sm-9 col-md-7" data-max="1400000" data-min="10000">
+													<div class="box ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+														<div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
+														<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+													</div>
+
+													<div class="u u_0" data-value="3" style="left: 0%">3 мес.</div>
+													<div class="u u_1" data-value="6" style="left: 25%">6 мес.</div>
+													<div class="u u_2" data-value="12" style="left: 50%">12 мес.</div>
+													<div class="u u_3" data-value="24" style="left: 75%">24 мес.</div>
+
+													<div class="d d_0" data-value="12" style="left: 12.5%">12%</div>
+													<div class="d d_1" data-value="14" style="left: 39%">14%</div>
+													<div class="d d_2" data-value="15" style="left: 65%">15%</div>
+													<div class="d d_3" data-value="16.5" style="left: 90%">16,50%</div>
+												</div>
+												<div class="field col-sm-3 col-md-2">
+													<div class="row">
+														<div class="i col-xs-6 col-sm-12">
+															<input class="input-id-1" id="saving_month_2" name="saving[month]" readonly="readonly" type="text" value="3"> мес.
+														</div>
+														<div class="i col-xs-6 col-sm-12">
+															<input class="input-id-2" id="saving_percent_2" name="saving[percent]" readonly="readonly" type="text" value="12"> %
+														</div>
+													</div>
+												</div>
+												<div class="total col-xs-12 col-md-3">
+													<div class="text">
+														<div class="hidden-text">Сумма не входит в рамки данной программы.</div>
+														<div class="regular">
+															За <span>3</span> месяцев я получу:
+														</div>
+													</div>
+													<div class="sum">54 906</div><div class="sum-desc"> руб.</div>
+													<input class="finsum" name="sum" type="hidden" value="54906">
+													<!--div class="bt">
+														<input class="btn" name="commit" type="submit" value="Внести">
+													</div-->
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="hidden item item-2" data-id="2">
+									<form accept-charset="UTF-8" action="/calc/add.php" class="new_saving row" id="new_saving_6" method="post">
+										<div style="display:none">
+											<input name="utf8" type="hidden" value="?">
+											<input name="type" type="hidden" value="sberegatelnyj">
+											<input name="authenticity_token" type="hidden" value="3IBlrjZFZVInV3wmo1ovO8wI/gHl64vb+JrmoEp1Vm8=">
+										</div>
+										<input id="saving_deposit_id_6" name="saving[deposit_id]" type="hidden" value="6">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="ante col-xs-12 col-sm-6 col-md-7">
+													<span>Я хочу внести: </span><input id="saving_sum_6" name="saving[sum]" type="text" value="1400000"> руб.
+												</div>
+												<div class="pensioner col-xs-12 col-sm-6 col-md-5">
+													<span>
+														<input id="saving_pensioner_6" name="saving[pensioner]" type="checkbox" value="1">
+														<label for="saving_pensioner_6">Я пенсионер</label>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="row">
+												<div class="slider col-sm-9 col-md-7" data-max="1400000" data-min="10000">
+													<div class="box ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+														<div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div>
+														<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+													</div>
+
+													<div class="u u_0" data-value="3" style="left: 0%">3 мес.</div>
+													<div class="u u_1" data-value="6" style="left: 25%">6 мес.</div>
+													<div class="u u_2" data-value="12" style="left: 50%">12 мес.</div>
+													<div class="u u_3" data-value="24" style="left: 75%">24 мес.</div>
+
+													<div class="d d_0" data-value="15" style="left: 12.5%">15%</div>
+													<div class="d d_1" data-value="16" style="left: 39%">16%</div>
+													<div class="d d_2" data-value="17" style="left: 65%">17%</div>
+													<div class="d d_3" data-value="18" style="left: 90%">18%</div>
+												</div>
+												<div class="field col-sm-3 col-md-2">
+													<div class="row">
+														<div class="i col-xs-6 col-sm-12">
+															<input class="input-id-1" id="saving_month_6" name="saving[month]" readonly="readonly" type="text" value="3"> мес.
+														</div>
+														<div class="i col-xs-6 col-sm-12">
+															<input class="input-id-2" id="saving_percent_6" name="saving[percent]" readonly="readonly" type="text" value="15"> %
+														</div>
+													</div>
+												</div>
+												<div class="total col-xs-12 col-md-3">
+													<div class="text">
+														<div class="hidden-text">Сумма не входит в рамки данной программы.</div>
+														<div class="regular">За <span>3</span> месяцев я получу: </div>
+													</div>
+													<div class="sum">61 731</div><div class="sum-desc"> руб.</div>
+													<input class="finsum" name="sum" type="hidden" value="61731">
+													<!--div class="bt">
+														<input class="btn" name="commit" type="submit" value="Внести">
+													</div-->
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="inform inform-1" data-id="1">
+								<ul class="row">
+									<li class="col-sm-6 col-md-4">Пополнение сбережений</li>
+									<li class="col-sm-6 col-md-4">Максимальная сумма внесения 1400000.</li>
+									<li class="col-sm-6 col-md-4">Минимальная сумма внесения 10000.</li>
+									<li class="col-sm-6 col-md-4">Проценты выплачиваются ежемесячно</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+							<div class="hidden inform inform-2" data-id="2">
+								<ul class="row">
+									<li class="col-sm-6 col-md-4">Пополнение сбережений</li>
+									<li class="col-sm-6 col-md-4">Максимальная сумма внесения 1400000.</li>
+									<li class="col-sm-6 col-md-4">Минимальная сумма внесения 10000.</li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				</div>
+			</div>
+	</section>
+
+
 <!--
 	<section id="portfolio" class="portfolio simple">
 		<div class="container">
@@ -1114,6 +1291,9 @@
 <script>
 </script>
 <!-- END CHATRA INTEGRATION WITH ROISTAT -->
+
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/calc_app.js"></script>
 
 </body>
 
