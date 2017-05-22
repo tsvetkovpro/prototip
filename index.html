@@ -27,7 +27,7 @@
 					<header>
 						<div class="logo">
 							<a href="http://souz-zberzaim.ru/" target="_blank"><img src="img/logozz.png" alt=""></a>
-							<p>Кооператив №1 по версии <br> рейтинга МКК КПК</p>
+							<p>Кооператив №1 по версии <br></p>
 						</div>
 						<a href="tel:88005554196" class="phone-but">8 800 555 41 96</a>
 					</header>
@@ -360,7 +360,6 @@
 						<a href="https://vk.com/zberzaim" target="_blank"><img src="img/vk.svg" alt=""></a>
 						<a href="https://www.facebook.com/groups/1142553675863361/" target="_blank"><img src="img/fb.png" alt=""></a>
 						<a href="https://www.instagram.com/zberzaim" target="_blank"><img src="img/insta.svg" alt=""></a>
-						<a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.svg" alt=""></a>
 					</div>
 				</div>
 				<div class="col-12">
@@ -368,29 +367,40 @@
 						<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 						<script type="text/javascript">
 							$(document).ready(function() {
-								ymaps.ready(init);
+  ymaps.ready(init);
 
-								function init() {
-									var myMap = new ymaps.Map("map", {
-											center: [51.768281538872, 55.11444420222165],
-											zoom: 15
-										}, {
-											searchControlProvider: 'yandex#search'
-										}),
-										myPlacemark = new ymaps.Placemark([51.768281538872, 55.11444420222165], {
-											balloonContentHeader: "ZБЕРZАЙМ",
-											balloonContentBody: "г. Оренбург, Туркестанская улица, 2а",
-											hintContent: "ZБЕРZАЙМ"
-										}, {
-											preset: 'islands#icon',
-											iconColor: '#f13044'
-										});
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [52.43474661416169, 52.07921356562497],
+      zoom: 7
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
 
-									myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('scrollZoom');
 
-									myMap.geoObjects.add(myPlacemark);
-								}
-							});
+    var myPlaceMark1 = new ymaps.Placemark([51.768281538872, 55.11444420222165], {
+      balloonContentHeader: "Noname",
+      balloonContentBody: "город Н",
+      hintContent: "Noname"
+    }, {
+      preset: 'islands#icon',
+      iconColor: '#f13044'
+    });
+    myMap.geoObjects.add(myPlaceMark1);
+
+    var myPlaceMark2 = new ymaps.Placemark([52.768281538872, 54.11444420222165], {
+      balloonContentHeader: "Noname",
+      balloonContentBody: "город Н",
+      hintContent: "Noname"
+    }, {
+      preset: 'islands#icon',
+      iconColor: '#f13044'
+    });
+    myMap.geoObjects.add(myPlaceMark2);
+
+  }
+});
 						</script>
 					</div>
 				</div>
