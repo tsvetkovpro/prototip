@@ -13,17 +13,9 @@ if($_GET['type'] == 'ezhemesyachnyi'){
 	$result = $dohod_za_mesyac * $month; */
 	/* $result = ($money*0.1325 + ($money*(($percent - 13.25)*0.01) - $money*(($percent - 13.25)*0.01)*0.35))/12 * $month; //в сжатом виде чебы за один присест */
 	if(!$pensioner){
-		if($month == 24){
-			$result = (($money*$percent)/100)/12*$month-(((($percent-(10.5+5))*$money/100)*0.35)/12*$month);
-		}else{
 			$result = (($percent*$money)/100)/12*$month;
-		}
 	}else{
-		if($month == 24 || $month == 12){
-			$result = (($money*$percent)/100)/12*$month-(((($percent-(10.5+5))*$money/100)*0.35)/12*$month);
-		}else{
 			$result = (($percent*$money)/100)/12*$month;
-		}
 	}
 	echo (round($result));
 }

@@ -101,15 +101,13 @@
 														<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
 													</div>
 
-													<div class="u u_0" data-value="3" style="left: 0%">3 мес.</div>
-													<div class="u u_1" data-value="6" style="left: 25%">6 мес.</div>
-													<div class="u u_2" data-value="12" style="left: 50%">12 мес.</div>
-													<div class="u u_3" data-value="24" style="left: 75%">24 мес.</div>
+													<div class="u u_0" data-value="3" style="left: 15%">3 мес.</div>
+													<div class="u u_1" data-value="6" style="left: 40%">6 мес.</div>
+													<div class="u u_2" data-value="12" style="left: 65%">12 мес.</div>
 
-													<div class="d d_0" data-value="12" style="left: 12.5%">12%</div>
-													<div class="d d_1" data-value="14" style="left: 39%">14%</div>
-													<div class="d d_2" data-value="15" style="left: 65%">15%</div>
-													<div class="d d_3" data-value="16.5" style="left: 90%">16,50%</div>
+													<div class="d d_0" data-value="11" style="left: 22.5%">11%</div>
+													<div class="d d_1" data-value="12" style="left: 49%">12%</div>
+													<div class="d d_2" data-value="13" style="left: 75%">13%</div>
 												</div>
 												<div class="field col-sm-3 col-md-2">
 													<div class="row">
@@ -167,15 +165,13 @@
 														<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
 													</div>
 
-													<div class="u u_0" data-value="3" style="left: 0%">3 мес.</div>
-													<div class="u u_1" data-value="6" style="left: 25%">6 мес.</div>
-													<div class="u u_2" data-value="12" style="left: 50%">12 мес.</div>
-													<div class="u u_3" data-value="24" style="left: 75%">24 мес.</div>
+													<div class="u u_0" data-value="3" style="left: 25%">3 мес.</div>
+													<div class="u u_1" data-value="6" style="left: 50%">6 мес.</div>
+													<div class="u u_2" data-value="12" style="left: 75%">12 мес.</div>
 
-													<div class="d d_0" data-value="15" style="left: 12.5%">15%</div>
-													<div class="d d_1" data-value="16" style="left: 39%">16%</div>
-													<div class="d d_2" data-value="17" style="left: 65%">17%</div>
-													<div class="d d_3" data-value="18" style="left: 90%">18%</div>
+													<div class="d d_0" data-value="15" style="left: 12.5%">11%</div>
+													<div class="d d_1" data-value="16" style="left: 39%">12%</div>
+													<div class="d d_2" data-value="17" style="left: 65%">13%</div>
 												</div>
 												<div class="field col-sm-3 col-md-2">
 													<div class="row">
@@ -372,7 +368,7 @@
   function init() {
     var myMap = new ymaps.Map("map", {
       center: [52.43474661416169, 52.07921356562497],
-      zoom: 7
+      zoom: 6
     }, {
       searchControlProvider: 'yandex#search'
     });
@@ -380,24 +376,46 @@
     myMap.behaviors.disable('scrollZoom');
 
     var myPlaceMark1 = new ymaps.Placemark([51.768281538872, 55.11444420222165], {
-      balloonContentHeader: "Noname",
-      balloonContentBody: "город Н",
-      hintContent: "Noname"
+      balloonContentHeader: "Оренбург",
+      balloonContentBody: "Оренбург",
+      hintContent: "Оренбург"
     }, {
       preset: 'islands#icon',
       iconColor: '#f13044'
     });
     myMap.geoObjects.add(myPlaceMark1);
 
-    var myPlaceMark2 = new ymaps.Placemark([52.768281538872, 54.11444420222165], {
-      balloonContentHeader: "Noname",
-      balloonContentBody: "город Н",
-      hintContent: "Noname"
+    var myPlaceMark2 = new ymaps.Placemark([53.6234055, 52.433221499], {
+      balloonContentHeader: "Бугуруслан",
+      balloonContentBody: "Бугуруслан",
+      hintContent: "Бугуруслан"
     }, {
       preset: 'islands#icon',
       iconColor: '#f13044'
     });
     myMap.geoObjects.add(myPlaceMark2);
+
+
+    var myPlaceMark3 = new ymaps.Placemark([50.7732825, 54.26132480000001], {
+      balloonContentHeader: "Бузулук",
+      balloonContentBody: "Бузулук",
+      hintContent: "Бузулук"
+    }, {
+      preset: 'islands#icon',
+      iconColor: '#f13044'
+    });
+    myMap.geoObjects.add(myPlaceMark3);
+
+
+    var myPlaceMark4 = new ymaps.Placemark([51.54, 51.38], {
+      balloonContentHeader: "Первомайский",
+      balloonContentBody: "Первомайский",
+      hintContent: "Первомайский"
+    }, {
+      preset: 'islands#icon',
+      iconColor: '#f13044'
+    });
+    myMap.geoObjects.add(myPlaceMark4);
 
   }
 });
